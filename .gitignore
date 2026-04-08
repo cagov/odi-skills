@@ -1,31 +1,32 @@
 # --- packaging ignores ---
+# Root dist/: ignore build output; keep empty dir via dist/.gitkeep (tracked).
+/dist/*
+!/dist/.gitkeep
 */dist
 */dist/*
-dist
-dist/*
+
+# --- Temporary ignores ---
+src/odi*
+releases/*.skill
 
 # --- ODI ignores ---
 CLAUDE.md
-node_modules
 test-results
 _dist
-.DS_Store
 */__pycache__/
+.DS_Store
 scripts/attic/
-scripts/i18n_candidate.js
-site/es_old
 .autoenv*
 .venv*
 *venv
-*-MT.mmmd
 .idea
-local_settings.js
 __pycache__
 attic/
-.playwright-mcp/
 CLAUDE.local.md
 .claude/
 .cursor/
+.cursorignore
+.claudeignore
 
 # --- macOS ignores ---
 .DS_Store
@@ -66,7 +67,6 @@ $RECYCLE.BIN/
 __MACOSX/
 **/__MACOSX/**
 *.zip
-*.skill
 *.7z
 *.rar
 *.tar
@@ -75,8 +75,8 @@ __MACOSX/
 *.bz2
 *.xz
 
-# If you need to commit a specific archive, force-add it:
-#   git add -f path/to/required.zip
+# `.skill` builds are not ignored — add and commit them like any other file (see docs/RELEASE.md).
+
 
 # --- Local scratch / exports (create these names if you drop Desktop junk here) ---
 desktop-export/
@@ -87,17 +87,21 @@ tmp/
 *.temp
 *~
 
-# --- Python (skill scripts) ---
+# --- Tooling ignores ---
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+*.egg-info
 .venv/
 venv/
 .env
 .env.*
 !.env.example
+.ruff_cache/
+.npmrc
+node_modules
 
 # --- Editors / IDEs ---
 .idea/

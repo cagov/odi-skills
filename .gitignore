@@ -1,0 +1,107 @@
+# --- packaging ignores ---
+*/dist
+*/dist/*
+dist
+dist/*
+
+# --- ODI ignores ---
+CLAUDE.md
+node_modules
+test-results
+_dist
+.DS_Store
+*/__pycache__/
+scripts/attic/
+scripts/i18n_candidate.js
+site/es_old
+.autoenv*
+.venv*
+*venv
+*-MT.mmmd
+.idea
+local_settings.js
+__pycache__
+attic/
+.playwright-mcp/
+CLAUDE.local.md
+.claude/
+.cursor/
+
+# --- macOS ignores ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+*.dmg
+*.sparsebundle
+*.sparseimage
+
+# --- Windows ignores ---
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# --- Zip / archive tooling (extracted cruft & local drops) ---
+__MACOSX/
+**/__MACOSX/**
+*.zip
+*.skill
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.bz2
+*.xz
+
+# If you need to commit a specific archive, force-add it:
+#   git add -f path/to/required.zip
+
+# --- Local scratch / exports (create these names if you drop Desktop junk here) ---
+desktop-export/
+scratch/
+temp/
+tmp/
+*.tmp
+*.temp
+*~
+
+# --- Python (skill scripts) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# --- Editors / IDEs ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

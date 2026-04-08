@@ -1,0 +1,16 @@
+{
+  "name": "odi-skills",
+  "version": "1.0.0",
+  "main": "README.md",
+  "description": "Dev tooling only. Biome for JSON formatting. This is a Python project.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npx @biomejs/biome format --write",
+    "lint": "npx @biomejs/biome lint --write",
+    "check": "npx @biomejs/biome check --write",
+    "@biomejs/biome": "^1.9.4"
+  },
+  "author": "CA Office of Data and Innovation",
+  "license": "ISC"
+}

@@ -39,8 +39,8 @@ Examples:
 odi-plain-language/1.0
 odi-plain-language/2.0-draft
 odi-plain-language/2.0-stable
-odi-data-viz/1.0
-odi-data-viz/1.1-name-2026-04
+odi-demo-02/1.0
+odi-demo-02/1.1-name-2026-04
 ```
 
 ### Rules
@@ -80,7 +80,7 @@ Example layout:
 ```
 releases/
 ├── odi-plain-language.skill
-└── odi-data-viz.skill
+└── odi-demo-02.skill
 ```
 
 Older builds may stay in `releases/` for reference. If someone needs a specific version, they can use the matching git tag.

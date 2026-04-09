@@ -94,6 +94,7 @@ __pycache__/
 *.so
 .Python
 *.egg-info
+odi_skills.egg-info
 .venv/
 venv/
 .env

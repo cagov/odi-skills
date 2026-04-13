@@ -1,0 +1,20 @@
+{
+  "name": "odi-skills",
+  "version": "1.0.0",
+  "main": "README.md",
+  "description": "Dev tooling only. Biome for JSON formatting. This is a Python project.",
+  "private": true,
+  "scripts": {
+    "skill": "make skill SKILL=\"$INIT_CWD\"",
+    "skill:release": "make skill-release SKILL=\"$INIT_CWD\"",
+    "lint": "make lint",
+    "format": "make format",
+    "check": "make check",
+    "test": "make lint"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  },
+  "author": "CA Office of Data and Innovation",
+  "license": "ISC"
+}

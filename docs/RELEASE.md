@@ -2,8 +2,11 @@
 
 ## Overview
 
-This repo stores multiple skills under `src/`. Each skill has its own folder. Each skill gets developed and released on its own in `releases/`.
+This repo stores multiple skills under `src/`. Each skill has its own folder. Each skill gets developed and released on its own in `releases/`. A staging space for temporary skill builds is in `dist/`.
+
 The strategy is lightweight. Contributors don't need to coordinate releases across skills. Someone who wants a skill can grab it without cloning the whole repo history.
+
+Each skill can be released independently using namespaced git tags (e.g., `odi-plain-language/2.1.0`), with built `.skill` files stored in `releases/` and published as individual GitHub Releases with the `.skill` file attached.
 
 ---
 
@@ -112,7 +115,7 @@ When you're ready to release a new version of a skill:
 
 ## Versioning philosophy
 
-We use semver (`major.minor`) with optional plain-text labels. No `v` prefix. Version numbers are just numbers.
+We use [semver](https://semver.org) (`major.minor`) with optional plain-text labels. No `v` prefix. Version numbers are just numbers.
 
 - **Major** bumps when the skill's behavior changes in a breaking or big way.
 - **Minor** bumps for meaningful but non-breaking updates.
@@ -123,7 +126,7 @@ We use semver (`major.minor`) with optional plain-text labels. No `v` prefix. Ve
 
 ---
 
-## What Goes in a version bump
+## What goes in a version bump
 
 | Change type | New version? |
 |---|---|

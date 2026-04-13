@@ -12,7 +12,7 @@ Node and npm play a smaller role. They install Biome, which formats and lints JS
 
 ## What skills are
 
-Skills are Markdown and reference files. Neither toolchain runs at skill runtime. Both are development and packaging tools only.
+Skills are Markdown and reference files that Anthropic's Claude can run. Neither toolchain runs at skill runtime. Both are development and packaging tools only.
 
 ---
 
@@ -20,7 +20,7 @@ Skills are Markdown and reference files. Neither toolchain runs at skill runtime
 
 | Stack | Role | Config |
 |--------|------|--------|
-| **Node + npm** | Formats and lints JSON (and any JS you add later) | `package.json`, `biome.json` |
+| **Node + npm** | Formats and lints JSON (and any JS we add later) | `package.json`, `biome.json` |
 | **Python + venv** | Runs Ruff on Python in `scripts/` and `src/*/scripts/` | `pyproject.toml` |
 
 They work on their own. Biome does not read Python. Ruff does not read `package.json`. You install each stack once per clone.

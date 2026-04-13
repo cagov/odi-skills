@@ -44,18 +44,17 @@ We suggest replacing old versions instead of keeping both. You can always switch
 
 |Skill|What it does|
 | --- | --- |
-|ODI plain language | Rewrites text to meet the ODI Plain Language Equity Standard. Works for Slack, emails, memos, briefings, blog posts, and case studies.|
-|[TODO: add future skills as they are published] | |
+|Example: ODI plain language | Rewrites text to meet the ODI Plain Language Equity Standard. Works for Slack, emails, memos, briefings, blog posts, and case studies.|
+|[TODO: add skills as they are published] | |
 
 ---
 
 ## Tips
 
-* **Use the best model.** Complex skills may work better with Opus than Sonnet or Haiku.
+* **Use the best model.** Skills for complex tasks may work better with Opus than Sonnet or Haiku.
 * **Start a new conversation for each task.** Skills work better in a fresh chat than in a long thread with mixed topics.
 * **Follow the prompts.** Skills ask questions on purpose. Answer them. Skipping ahead usually gives a weaker result.
 * **Work in sections for long content.** If your document is more than a page or two, let Claude break it into parts. You will get a better edit.
-* **Claude doesn’t need to build an app.** Claude may offer to build an app to help you. Skip it. Stick to the standard chat screen.
 
 ---
 

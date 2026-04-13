@@ -14,7 +14,7 @@ odi-skills/
 ├── dist/                    # Default output for packaged .skill files
 ├── releases/                # Published .skill files (tracked in git)
 ├── src/                     # One folder per skill (kebab-case)
-│   └── odi-plain-language/  # Example skill
+│   └── odi-plain-language/  # Example of where a skill would live
 ├── scripts/
 │   └── package_skill.py     # Packager
 ├── Makefile
@@ -118,6 +118,11 @@ CLI flags live in PACKAGE-SKILL.md only. They are not repeated here.
 | Skill folder name | Lowercase kebab-case. Must match `name` in frontmatter |
 | Changelog | Update `CHANGELOG.md` for meaningful changes |
 | Linting | See [MAINTAINER.md](MAINTAINER.md). Run Biome (`npm run check:ci`) and Ruff in a venv (`npm run lint:python`) |
+
+---
+
+## Testing and evaluations
+You can include information in the README.md for your skill, in a file called EVALS.md, or in release notes for updated versions of skills.
 
 ---
 

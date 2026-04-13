@@ -99,6 +99,7 @@ odi_skills.egg-info
 venv/
 .env
 .env.*
+env
 !.env.example
 .ruff_cache/
 .npmrc

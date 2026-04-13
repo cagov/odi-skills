@@ -1,0 +1,113 @@
+# --- packaging ignores ---
+# Root dist/: ignore build output; keep empty dir via dist/.gitkeep (tracked).
+/dist/*
+!/dist/.gitkeep
+*/dist
+*/dist/*
+
+# --- Temporary ignores ---
+src/odi*
+releases/*.skill
+
+# --- ODI ignores ---
+CLAUDE.md
+test-results
+_dist
+*/__pycache__/
+.DS_Store
+scripts/attic/
+.autoenv*
+.venv*
+*venv
+.idea
+__pycache__
+attic/
+CLAUDE.local.md
+.claude/
+.cursor/
+.cursorignore
+.claudeignore
+
+# --- macOS ignores ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+*.dmg
+*.sparsebundle
+*.sparseimage
+
+# --- Windows ignores ---
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# --- Zip / archive tooling (extracted cruft & local drops) ---
+__MACOSX/
+**/__MACOSX/**
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.bz2
+*.xz
+
+# `.skill` builds are not ignored — add and commit them like any other file (see docs/RELEASE.md).
+
+
+# --- Local scratch / exports (create these names if you drop Desktop junk here) ---
+desktop-export/
+scratch/
+temp/
+tmp/
+*.tmp
+*.temp
+*~
+
+# --- Tooling ignores ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info
+odi_skills.egg-info
+.venv/
+venv/
+.env
+.env.*
+env
+!.env.example
+.ruff_cache/
+.npmrc
+node_modules
+
+# --- Editors / IDEs ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
